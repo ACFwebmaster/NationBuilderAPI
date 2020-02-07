@@ -56,13 +56,13 @@ namespace NationBuilderAPI.V1
         /// This is a boolean flag that lets us know if this person is on a do not call list.
         /// </summary>
         [DataMember]
-        public bool do_not_call;
+        public bool? do_not_call;
 
         /// <summary>
         /// This is a boolean flag that lets us know if this person is on a do not contact list.
         /// </summary>
         [DataMember]
-        public bool do_not_contact;
+        public bool? do_not_contact;
 
         /// <summary>
         /// This person’s ID from Catalist.
@@ -80,7 +80,7 @@ namespace NationBuilderAPI.V1
         /// Boolean representing whether this person has opted-in to email correspondence.
         /// </summary>
         [DataMember]
-        public bool email_opt_in;
+        public bool? email_opt_in;
 
         /// <summary>
         /// The name of the company for which this person works.
@@ -116,7 +116,7 @@ namespace NationBuilderAPI.V1
         /// A boolean representing whether this person has Facebook information.
         /// </summary>
         [DataMember]
-        public bool has_facebook;
+        public bool? has_facebook;
 
         /// <summary>
         /// The NationBuilder ID of the person, specific to the authorized nation.
@@ -128,13 +128,13 @@ namespace NationBuilderAPI.V1
         /// Whether the person is a Twitter follower of one of the nation’s broadcasters.
         /// </summary>
         [DataMember]
-        public bool is_twitter_follower;
+        public bool? is_twitter_follower;
 
         /// <summary>
         /// A boolean field that indicates whether the person has volunteered.
         /// </summary>
         [DataMember]
-        public bool is_volunteer;
+        public bool? is_volunteer;
 
         /// <summary>
         /// District field.
@@ -164,7 +164,7 @@ namespace NationBuilderAPI.V1
         /// A boolean representing whether the person has opted-in to mobile correspondence.
         /// </summary>
         [DataMember]
-        public bool mobile_opt_in;
+        public bool? mobile_opt_in;
 
         /// <summary>
         /// This person's cell phone number.
@@ -360,7 +360,7 @@ namespace NationBuilderAPI.V1
 
         /// <summary>
         /// Clone this object as a shallow copy.
-        /// 
+        ///
         /// Any member objects will be shared between this object and its shallow clone!
         /// </summary>
         /// <returns>The resulting AbbreviatedPerson object.</returns>
